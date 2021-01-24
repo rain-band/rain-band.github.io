@@ -1,109 +1,92 @@
-@charset "Shift_JIS";
+@charset "UTF-8";
 
-/* 基本 */
-body	{
-	background-color:black;
-	font-family: "Lucida Sans", Arial;
-	color:	white;
-	}
-.center	{
-	text-align: center;
-	}
+body  {
+  background-color:black;
+  font-family: "Lucida Sans", Arial;
+  color:  white;
+}
+.center  {
+  text-align: center;
+}
 
-/* ハイパーリンク */
-a:link	{
-	padding:0pt 2pt;
-	color:red;
-	}
-a:hover	{
-	padding:0pt 2pt;
-	color: black;
-	background-color: red;
-	text-decoration:line-through;
-	}
+a:link  {
+  padding:0pt 2pt;
+  color:red;
+}
+a:hover  {
+  padding:0pt 2pt;
+  color: black;
+  background-color: red;
+  text-decoration:line-through;
+}
 a:visited{
-	padding:0pt 2pt;
-	color: #aab;
-	}
+  padding:0pt 2pt;
+  color: #aab;
+}
 a:active{
-	padding:0pt 2pt;
-	color: #336600;
-	}
-a img	{
-	border:none;
-	}
+  padding:0pt 2pt;
+  color: #336600;
+}
+a img  {
+  border:none;
+}
 
-/* 見出し要素 */
-h1	{
-/*	text-align:center; */
-	font-size:180%;
-	color:white;
-	}
-h2	{
-	font-size:150%;
-	color:white;
-	}
-h3	{
-	font-size: 100%;
-	font-weight: normal;
-	margin-left: 25px;
-	}
+h1  {
+/*  text-align:center; */
+  font-size:180%;
+}
+h2  {
+  font-size:150%;
+}
+h3  {
+  font-size: 100%;
+  font-weight: normal;
+  margin-left: 25px;
+}
 
-/* ブロック要素の基本 */
-p	{
-	letter-spacing: 1px;
-	margin-left: 15px;
-	color:white;
-	}
+p  {
+  letter-spacing: 1px;
+  margin-left: 15px;
+}
 .center p{
-	font-size:95%;
-	}
-p.ss	{
-	font-size:90%;
-	}
+  font-size:95%;
+}
+p.ss  {
+  font-size:90%;
+}
 
-/* 強調 */
-em	{
-	font-style:normal;
-	}
-strong	{
-	font-style:normal;
-	font-weight:bold;
-	line-height: 1.5em;
-	border-color: #bb3366;
-	border-style: none none double;
-	}
+em  {
+  font-style:normal;
+}
+strong  {
+  font-style:normal;
+  font-weight:bold;
+  line-height: 1.5em;
+  border-color: #bb3366;
+  border-style: none none double;
+}
 
-/* リスト要素 */
 .center li{
-	font-size:130%;
-	color:white;
-	}
-li	{
-	font-size: 100%;
-	list-style-position: inside;
-	color:white;
-	}
-li.no	{
-	list-style-type: none;
-	}
+  font-size:130%;
+}
+li  {
+  font-size: 100%;
+  list-style-position: inside;
+}
+li.no  {
+  list-style-type: none;
+}
 
-/* 視覚的な要素 */
-span.face{
-	font-family: "ＭＳ ゴシック", Osaka－等幅 , monospace;
-	font-size: 80%;
-	letter-spacing: -1px;
-	}
 div.left{
-	float:left;
-	}
+  float:left;
+}
 div.right{
-	clear:right;
-	}
+  clear:right;
+}
 div.menu{
-	margin: 5%;
-	}
+  margin: 5%;
+}
 div.notice{
-	filter: Alpha(opacity=90 ,style=1);
-	margin: 5%;
-	}
+  filter: Alpha(opacity=90 ,style=1);
+  margin: 5%;
+}
