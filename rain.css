@@ -1,92 +1,119 @@
 @charset "UTF-8";
 
-body  {
-  background-color:black;
+body {
+  background-color: black;
   font-family: "Lucida Sans", Arial;
-  color:  white;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
-.center  {
+
+.center {
   text-align: center;
 }
 
-a:link  {
-  padding:0pt 2pt;
-  color:red;
+a:link {
+  padding: 0pt 2pt;
+  color: red;
 }
-a:hover  {
-  padding:0pt 2pt;
+a:hover {
+  padding: 0pt 2pt;
   color: black;
   background-color: red;
-  text-decoration:line-through;
+  text-decoration: line-through;
 }
 a:visited{
-  padding:0pt 2pt;
+  padding: 0pt 2pt;
   color: #aab;
 }
 a:active{
-  padding:0pt 2pt;
+  padding: 0pt 2pt;
   color: #336600;
 }
-a img  {
-  border:none;
+a img {
+  border: none;
 }
 
-h1  {
+h1, h2, h3 {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+h1 {
 /*  text-align:center; */
-  font-size:180%;
+  font-size: 180%;
 }
-h2  {
-  font-size:150%;
+h2 {
+  font-size: 150%;
 }
-h3  {
+h3 {
   font-size: 100%;
   font-weight: normal;
   margin-left: 25px;
 }
 
-p  {
+p {
   letter-spacing: 1px;
   margin-left: 15px;
 }
 .center p{
-  font-size:95%;
+  font-size: 95%;
 }
-p.ss  {
-  font-size:90%;
+p.ss {
+  font-size: 90%;
 }
 
-em  {
-  font-style:normal;
+em {
+  font-style: normal;
 }
-strong  {
-  font-style:normal;
-  font-weight:bold;
+strong {
+  font-style: normal;
+  font-weight: bold;
   line-height: 1.5em;
   border-color: #bb3366;
   border-style: none none double;
 }
 
-.center li{
-  font-size:130%;
+dl {
+  margin: 1%;
 }
-li  {
+
+hr {
+  border: 0.5px white solid;
+}
+
+.center li {
+  font-size: 130%;
+}
+li {
   font-size: 100%;
   list-style-position: inside;
 }
-li.no  {
+li.no {
   list-style-type: none;
 }
 
-div.left{
-  float:left;
+/* For index page */
+#rain_logo {
+  width: 25%;
 }
-div.right{
-  clear:right;
+div.left {
+  float: left;
+  width: 35%;
+  margin: 0% 7% 0% 0%;
 }
-div.menu{
+div.left img {
+  width: 100%;
+}
+div.right {
+  margin: 5% 20% 20% 20%;
+  clear: right;
+}
+div.menu {
   margin: 5%;
 }
-div.notice{
-  filter: Alpha(opacity=90 ,style=1);
-  margin: 5%;
+.right h2 {
+  font-size: 200%;
+}
+.last_update h2 {
+  font-size: 120%;
+  margin: 3% 0% 0% 0%;
 }
