@@ -1,40 +1,102 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html lang="ja"> 
+<html lang="ja">
 <head>
   <title>群馬バンド 麗音ファンサイト</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF8">
   <meta http-equiv="content-style-type" content="text/css">
   <meta http-equiv="content-script-type" content="text/javascript">
   <link href="rain.css" rel="stylesheet">
-  <script type="text/javascript" src="mootools.js"></script>
-  <script type="text/javascript" src="reflection.js"></script>
+  <script type="text/javascript" src="jq172.js"></script>
+    <script type="text/javascript">
+    jQuery(function($) {
+      rand = Math.floor(Math.random()*2);
+      if (rand == 0) {
+        $('h1').children('img').attr('src', 'image/rain_logo.png');
+      } else {
+        $('h1').children('img').attr('src', 'image/rain_old_logo.png');
+      }
+      rand = Math.floor(Math.random()*5);
+      if (rand == 0) {
+        $('.reflect').attr('src', 'image/rain_top_2.png');
+      } else if (rand == 1) {
+        $('.reflect').attr('src', 'image/rain_top_3.png');
+      } else if (rand == 2) {
+        $('.reflect').attr('src', 'image/rain_top_4.png');
+      } else if (rand == 3) {
+        $('.reflect').attr('src', 'image/rain_top_5.png');
+      } else {
+        $('.reflect').attr('src', 'image/rain_top.png');
+      }
+      const YOUTUBE_MOVIES = [
+        "https://youtu.be/tdzObEa1pyw",
+        "https://youtu.be/E3KReD_uC-M",
+        "https://youtu.be/rzse5XZ3gAs",
+        "https://youtu.be/KwxxiriEZUU",
+        "https://youtu.be/CMc6CZjeWVo",
+        "https://youtu.be/As9OC8cpRqk",
+        "https://youtu.be/HhpiAYCOnHw",
+        "https://youtu.be/evZbGFSCV2c",
+        "https://youtu.be/14ydozx1hEI",
+        "https://youtu.be/QjIeqrp082s",
+        "https://youtu.be/LzrXHt4HwQ0",
+        "https://youtu.be/lb7KAS13K3c",
+        "https://youtu.be/yc-LXf9hjSw",
+        "https://youtu.be/wWJlEbNaUAU"
+      ];
+      var movie = "";
+      const dt = new Date();
+      const month = dt.getMonth();
+      const today = dt.getDate();
+      if (month == 0 && today == 7) {
+        movie = "https://youtu.be/LzrXHt4HwQ0";
+      } else if (month == 4 && today == 7) {
+        movie = "https://youtu.be/tdzObEa1pyw";
+      } else if (month == 6 && today == 29) {
+        movie = "https://youtu.be/evZbGFSCV2c";
+      } else if (month == 7 && today == 22) {
+        movie = "https://youtu.be/wWJlEbNaUAU";
+      } else if (month == 10 && today == 22) {
+        movie = "https://youtu.be/KwxxiriEZUU";
+      } else if (month == 11 && today == 5) {
+        movie = "https://youtu.be/QjIeqrp082s"
+      } else {
+        movie = YOUTUBE_MOVIES[today % YOUTUBE_MOVIES.length];
+      }
+      $('#today_song').attr('href', movie);
+    });
+  </script>
+  <script type="text/javascript" src="snowfall.jquery.js"></script>
+  <script type="text/javascript" src="winter.js"></script>
 </head>
 <body>
-<div class="left">
-  <h1><img src="image/logo.png" alt="麗音"></h1>
-  <div class="menu">
-    <ul>
-      <li><a href="changes.html">更新履歴</a></li>
-      <li><a href="about_this_site.html">このサイトについて</a></li>
-      <li><a href="about_rain.html">麗音とは</a></li>
-      <li><a href="discography.html">音源</a></li>
-      <li><a href="live/index.html">公演</a></li>
-      <li><a href="printed_material.html">印刷物</a></li>
-      <li><a href="direct_mail.html">書簡</a></li>
-      <li><a href="http://mixi.jp/view_community.pl?id=2643209">麗音@mixi</a></li>
-      <li><a href="https://bandgal.hatenablog.jp/entry/2020/01/07/235119">麗音ヘノ想イ</a></li>
-    </ul>
+  <h1><img src="image/rain_logo.png" alt="麗音" id="rain_logo"></h1>
+  <div class="left">
+    <p><img src="image/rain_top.png" alt="麗音 (RAIN)" class="reflect"></p>
   </div>
-  <div class="notice">
-    <p>最終更新: 西暦2021年1月7日<br>
-    <a href="en/lyrics/less.html">lessの歌詞英訳</a>ページと<a href="en/lyrics/eternal_season.html">eternal seasonの歌詞英訳</a>ページを追加。<br>
-    <a href="live/list.html">公演一覧</a>のページに情報追加。<br>
-    <a href="discography.html">音源</a>情報をちょっと更新。<br>
-    ライブ動画を<a href="live/index.html">公演</a>のページに移動。</p>
+  <div class="right">
+    <section class="menu">
+      <h2>目録</h2>
+      <ul>
+        <li><a href="changes.html">更新履歴</a></li>
+        <li><a href="about_this_site.html">このサイトについて</a></li>
+        <li><a href="about_rain.html">麗音とは</a></li>
+        <li><a href="discography.html">音源</a></li>
+        <li><a href="live/index.html">公演</a></li>
+        <li><a href="printed_material.html">印刷物</a></li>
+        <li><a href="direct_mail.html">書簡</a></li>
+        <li><a href="http://mixi.jp/view_community.pl?id=2643209">麗音@mixi</a></li>
+        <li><a href="https://bandgal.hatenablog.jp/entry/2020/01/07/235119">麗音ヘノ想イ</a></li>
+        <li><a id="today_song" href="https://youtu.be/HhpiAYCOnHw">本日ノ曲</a></li>
+      </ul>
+    </section>
+    <article class="last_update">
+      <h2>最終更新: 西暦2021年1月28日</h2>
+      <ul>
+        <li>トップページのデザインを大胆に変更</li>
+        <li>トップページに日替りで変わる「本日ノ曲」を追加</li>
+        <li><a href="about_rain.html">麗音とは</a>のページに誕生日などの情報を追加</li>
+      </ul>
+    </article>
   </div>
-</div>
-<div class="right">
-  <p><img src="image/rain_top.png" alt="麗音 (RAIN)" border="0" class="reflect"></p>
-</div>
 </body>
 </html>
