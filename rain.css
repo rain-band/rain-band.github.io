@@ -1,109 +1,119 @@
-@charset "Shift_JIS";
+@charset "UTF-8";
 
-/* Šî–{ */
-body	{
-	background-color:black;
-	font-family: "Lucida Sans", Arial;
-	color:	white;
-	}
-.center	{
-	text-align: center;
-	}
+body {
+  background-color: black;
+  font-family: "Lucida Sans", Arial;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
 
-/* ƒnƒCƒp[ƒŠƒ“ƒN */
-a:link	{
-	padding:0pt 2pt;
-	color:red;
-	}
-a:hover	{
-	padding:0pt 2pt;
-	color: black;
-	background-color: red;
-	text-decoration:line-through;
-	}
+.center {
+  text-align: center;
+}
+
+a:link {
+  padding: 0pt 2pt;
+  color: red;
+}
+a:hover {
+  padding: 0pt 2pt;
+  color: black;
+  background-color: red;
+  text-decoration: line-through;
+}
 a:visited{
-	padding:0pt 2pt;
-	color: #aab;
-	}
+  padding: 0pt 2pt;
+  color: #aab;
+}
 a:active{
-	padding:0pt 2pt;
-	color: #336600;
-	}
-a img	{
-	border:none;
-	}
+  padding: 0pt 2pt;
+  color: #336600;
+}
+a img {
+  border: none;
+}
 
-/* Œ©o‚µ—v‘f */
-h1	{
-/*	text-align:center; */
-	font-size:180%;
-	color:white;
-	}
-h2	{
-	font-size:150%;
-	color:white;
-	}
-h3	{
-	font-size: 100%;
-	font-weight: normal;
-	margin-left: 25px;
-	}
+h1, h2, h3 {
+  font-family: "æ¸¸æ˜æœ", YuMincho, "ãƒ’ãƒ©ã‚®ãƒæ˜æœ ProN W3", "Hiragino Mincho ProN", "HGæ˜æœE", "ï¼­ï¼³ ï¼°æ˜æœ", "ï¼­ï¼³ æ˜æœ", serif;
+}
+h1 {
+/*  text-align:center; */
+  font-size: 180%;
+}
+h2 {
+  font-size: 150%;
+}
+h3 {
+  font-size: 100%;
+  font-weight: normal;
+  margin-left: 25px;
+}
 
-/* ƒuƒƒbƒN—v‘f‚ÌŠî–{ */
-p	{
-	letter-spacing: 1px;
-	margin-left: 15px;
-	color:white;
-	}
+p {
+  letter-spacing: 1px;
+  margin-left: 15px;
+}
 .center p{
-	font-size:95%;
-	}
-p.ss	{
-	font-size:90%;
-	}
+  font-size: 95%;
+}
+p.ss {
+  font-size: 90%;
+}
 
-/* ‹­’² */
-em	{
-	font-style:normal;
-	}
-strong	{
-	font-style:normal;
-	font-weight:bold;
-	line-height: 1.5em;
-	border-color: #bb3366;
-	border-style: none none double;
-	}
+em {
+  font-style: normal;
+}
+strong {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.5em;
+  border-color: #bb3366;
+  border-style: none none double;
+}
 
-/* ƒŠƒXƒg—v‘f */
-.center li{
-	font-size:130%;
-	color:white;
-	}
-li	{
-	font-size: 100%;
-	list-style-position: inside;
-	color:white;
-	}
-li.no	{
-	list-style-type: none;
-	}
+dl {
+  margin: 1%;
+}
 
-/* ‹Šo“I‚È—v‘f */
-span.face{
-	font-family: "‚l‚r ƒSƒVƒbƒN", Osaka|“™• , monospace;
-	font-size: 80%;
-	letter-spacing: -1px;
-	}
-div.left{
-	float:left;
-	}
-div.right{
-	clear:right;
-	}
-div.menu{
-	margin: 5%;
-	}
-div.notice{
-	filter: Alpha(opacity=90 ,style=1);
-	margin: 5%;
-	}
+hr {
+  border: 0.5px white solid;
+}
+
+.center li {
+  font-size: 130%;
+}
+li {
+  font-size: 100%;
+  list-style-position: inside;
+}
+li.no {
+  list-style-type: none;
+}
+
+/* For index page */
+#rain_logo {
+  width: 25%;
+}
+div.left {
+  float: left;
+  width: 35%;
+  margin: 0% 7% 0% 0%;
+}
+div.left img {
+  width: 100%;
+}
+div.right {
+  margin: 5% 20% 20% 20%;
+  clear: right;
+}
+div.menu {
+  margin: 5%;
+}
+.right h2 {
+  font-size: 200%;
+}
+.last_update h2 {
+  font-size: 120%;
+  margin: 3% 0% 0% 0%;
+}
