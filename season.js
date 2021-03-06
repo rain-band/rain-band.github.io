@@ -1,9 +1,26 @@
+var flake_count = 50;
+var flake_color = "#ffffff";
+var image = "image/snow.png";
+
+var dt = new Date();
+var month = dt.getMonth();
+var today = dt.getDate();
+
+if (month == 12) {
+    ;
+} else if (month >= 2) {
+    flake_count = 42;
+    flake_color = "#eac2d0";
+    image = "image/sakura.png";
+};
+
+
 jQuery(document).ready(function(){
     jQuery(document).snowfall({
     // 雪の量 (数値)
-    flakeCount : 50,
+    flakeCount : flake_count,
     // 色 (RGB) (e.g., sakura: #eac2d0)
-    flakeColor : "#ffffff",
+    flakeColor : flake_color,
     // z-indexの値
     //flakeIndex : "888",
     // 最小サイズ (数値)
@@ -21,6 +38,6 @@ jQuery(document).ready(function(){
     // 要素に積もらせる場合
     // collection : "div.bottom",
     // オリジナル画像を使用する場合
-     image : "image/snow.png"
+    image : image
     })
 });
