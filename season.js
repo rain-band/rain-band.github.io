@@ -6,7 +6,7 @@ var dt = new Date();
 var month = dt.getMonth();
 var today = dt.getDate();
 
-if (month == 12) {
+if (month >= 10) {
     ;
 } else if (month >= 2) {
     flake_count = 42;
