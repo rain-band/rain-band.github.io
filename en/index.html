@@ -52,10 +52,14 @@
         "https://youtu.be/uN1KB3EWdvs",
         "https://youtu.be/G4-WmhhIK4I",
         "https://youtu.be/S1iZVTIrtWI",
-        "https://youtu.be/2_DyEvqC-CU"
+        "https://youtu.be/2_DyEvqC-CU",
+        "https://youtu.be/Srl-pCAY4Mk",
+        "https://youtu.be/HroBy4x55j4",
+        "https://youtu.be/uKH08prYKIE"
       ];
       var movie = "";
       const dt = new Date();
+      const year = dt.getYear();
       const month = dt.getMonth();
       const today = dt.getDate();
       if (month == 0 && today == 7) {
@@ -67,11 +71,11 @@
       } else if (month == 7 && today == 22) {
         movie = "https://youtu.be/wWJlEbNaUAU";
       } else if (month == 10 && today == 22) {
-        movie = "https://youtu.be/K25A0ksBwYo";
+        movie = "https://youtu.be/KwxxiriEZUU";
       } else if (month == 11 && today == 5) {
         movie = "https://youtu.be/QjIeqrp082s"
       } else {
-        movie = YOUTUBE_MOVIES[today % YOUTUBE_MOVIES.length];
+        movie = YOUTUBE_MOVIES[(year + month + today) % YOUTUBE_MOVIES.length];
       }
       $('#today_song').attr('href', movie);
     });
@@ -92,7 +96,7 @@
         <li><a href="about_this_site.html">About this site</a></li>
         <li><a href="about_rain.html">About RAIN</a></li>
         <li><a href="discography.html">Discography</a></li>
-        <li><a href="live/index.html">Live</a></li>
+        <li><D-c><a href="live/index.html">Live</a></li>
         <li><a href="printed_material.html">Printed items</a></li>
         <li><a href="direct_mail.html">Letters</a></li>
         <li><a id="today_song" href="https://youtu.be/HhpiAYCOnHw">Today's song</a></li>
@@ -101,9 +105,9 @@
       </ul>
     </section>
     <article class="last_update">
-      <h2>Last update: 2023.01.07</h2>
+      <h2>Last update: 2023.05.11</h2>
       <ul>
-        <li><a href="discography.html">Add YouTube's link and lyrics of "Shinka no Shunkan" (進化の瞬間)</a>.</li>
+          <li><a href="discography.html">Replace song name "Shinka no Shunkan" with "Shinka no Toki" (進化の瞬間)</a>. <a href="live/index.html">YouTube Movies are added</a>.</li>
       </ul>
     </article>
   </div>

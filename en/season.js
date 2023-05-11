@@ -10,28 +10,29 @@ var dt = new Date();
 var month = dt.getMonth();
 var today = dt.getDate();
 
-if (10 > month >= 4) {
-    flake_count = 300;
-    minSize = 0.1;
-    maxSize = 2.5;
-    minSpeed = 12;
-    maxSpeed = 15;
-    image = "../image/rain.png"
+if (month >= 10) {
+  ;
+} else if (month >= 3) {
+  flake_count = 500;
+  minSize = 0.1;
+  maxSize = 2.5;
+  minSpeed = 12;
+  maxSpeed = 17;
+  image = "../image/drop.png";
 } else if (month >= 2) {
-    flake_count = 42;
-    flake_color = "#eac2d0";
-    image = "../image/sakura.png";
+  flake_count = 42;
+  flake_color = "#eac2d0";
+  image = "../image/sakura.png";
 };
 
-
-jQuery(document).ready(function(){
-    jQuery(document).snowfall({
+jQuery(document).ready(function() {
+  jQuery(document).snowfall({
     // 雪の量 (数値)
     flakeCount : flake_count,
     // 色 (RGB) (e.g., sakura: #eac2d0)
     flakeColor : flake_color,
     // z-indexの値
-    //flakeIndex : "888",
+    // flakeIndex : "888",
     // 最小サイズ (数値)
     minSize : minSize,
     // 最大サイズ(数値)
@@ -48,6 +49,5 @@ jQuery(document).ready(function(){
     // collection : "div.bottom",
     // オリジナル画像を使用する場合
     image : image
-    })
+  })
 });
-

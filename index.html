@@ -52,10 +52,14 @@
         "https://youtu.be/uN1KB3EWdvs",
         "https://youtu.be/G4-WmhhIK4I",
         "https://youtu.be/S1iZVTIrtWI",
-        "https://youtu.be/2_DyEvqC-CU"
+        "https://youtu.be/2_DyEvqC-CU",
+        "https://youtu.be/Srl-pCAY4Mk",
+        "https://youtu.be/HroBy4x55j4",
+        "https://youtu.be/uKH08prYKIE"
       ];
       var movie = "";
       const dt = new Date();
+      const year = dt.getYear();
       const month = dt.getMonth();
       const today = dt.getDate();
       if (month == 0 && today == 7) {
@@ -71,7 +75,7 @@
       } else if (month == 11 && today == 5) {
         movie = "https://youtu.be/QjIeqrp082s"
       } else {
-        movie = YOUTUBE_MOVIES[today % YOUTUBE_MOVIES.length];
+        movie = YOUTUBE_MOVIES[(year + month + today) % YOUTUBE_MOVIES.length];
       }
       $('#today_song').attr('href', movie);
     });
@@ -102,9 +106,9 @@
       </ul>
     </section>
     <article class="last_update">
-      <h2>最終更新: 西暦2023年1月7日</h2>
+      <h2>最終更新: 西暦2023年5月11日</h2>
       <ul>
-        <li><a href="lyrics/shinka_no_toki.html">進化の瞬間のYouTubeリンクを追加</a>。</li>
+        <li><a href="live/index.html">YouTube動画の追加</a>。</li>
       </ul>
     </article>
   </div>
