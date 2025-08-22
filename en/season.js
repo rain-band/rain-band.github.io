@@ -12,7 +12,7 @@ var today = dt.getDate();
 
 if (month >= 10) {
   ;
-} else if (month >= 3) {
+} else if (month >= 4) {
   flake_count = 500;
   minSize = 0.1;
   maxSize = 2.5;

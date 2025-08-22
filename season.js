@@ -10,16 +10,16 @@ var dt = new Date();
 var month = dt.getMonth();
 var today = dt.getDate();
 
-if (month >= 10) {
+if (month >= 10) {  // 11月〜2月
   ;
-} else if (month >= 3) {
+} else if (month >= 4) {  // 5月〜10月
   flake_count = 500;
   minSize = 0.1;
   maxSize = 2.5;
   minSpeed = 12;
   maxSpeed = 17;
   image = "image/drop.png";
-} else if (month >= 2) {
+} else if (month >= 2) {  // 3月〜4月
   flake_count = 42;
   flake_color = "#eac2d0";
   image = "image/sakura.png";

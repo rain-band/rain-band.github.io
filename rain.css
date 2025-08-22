@@ -34,20 +34,17 @@ a img {
   border: none;
 }
 
-h1, h2, h3 {
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+h1, h2, h3, p, li, dl, dt, dd {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", "IPAex明朝", IPAexMincho, serif;
 }
 h1 {
-/*  text-align:center; */
   font-size: 180%;
 }
 h2 {
   font-size: 150%;
 }
 h3 {
-  font-size: 100%;
-  font-weight: normal;
-  margin-left: 25px;
+  font-size: larger;
 }
 
 p {
@@ -76,6 +73,13 @@ dl {
   margin: 1%;
 }
 
+dt {
+  font-size: large;
+}
+dd {
+  font-size: large;
+  margin-left: 2%;
+}
 hr {
   border: 0.5px white solid;
 }
@@ -91,29 +95,69 @@ li.no {
   list-style-type: none;
 }
 
+/* DM */
+section.letter ul li {
+  font-size: larger;
+  margin: 0%;
+}
+
 /* For index page */
 #rain_logo {
-  width: 25%;
+  height: 20%;
+  margin: 0% 0% 0% 0%;
+}
+div.main {
+  display: flex;
 }
 div.left {
-  float: left;
-  width: 35%;
-  margin: 0% 7% 0% 0%;
+  height: 80%;
+  margin: 0% 5% 0% 0%;
 }
 div.left img {
-  width: 100%;
+  height: 70%;
 }
 div.right {
-  margin: 5% 20% 20% 20%;
-  clear: right;
+  padding: -10%;
+  margin: 0%;
+  clear: none;
 }
-div.menu {
-  margin: 5%;
-}
-.right h2 {
+.right section.menu h2 {
   font-size: 200%;
+  margin: 0%;
+}
+section.menu {
+  margin: 5% 0% 0% 0%;
+}
+section.menu ul {
+  list-style-type: square;
+}
+section.menu ul li {
+  font-size: 150%;
 }
 .last_update h2 {
+  font-size: 130%;
+  margin: 0%;
+}
+.last_update ul {
+  list-style-type: japanese-formal;
+}
+.last_update ul li {
   font-size: 120%;
-  margin: 3% 0% 0% 0%;
+  margin: 0%;
+}
+p.other_language_guide {
+  font-size: 120%;
+  margin: 0%;
+}
+@media screen and (max-width: 480px) {
+  img#rain_logo {
+    height: 10%;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  /* For index page */
+  img#rain_logo {
+    height: 15%;
+  }
 }
