@@ -114,6 +114,10 @@ div.left {
   width: 55%;
   margin: 0% 5% 0% 0%;
 }
+div.left p img {
+  width: auto;
+  height: auto;
+}
 div.right {
   padding: -10%;
   margin: 0%;
